@@ -16,10 +16,18 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoRepair","name":"Tech Motors","description":"Oficina mecânica especializada em reparação e manutenção automotiva em Viamão.","telephone":"+5551992102079","email":"techmotors.service@gmail.com","address":{"@type":"PostalAddress","streetAddress":"R. Beira Lago, 136 - Santa Isabel","addressLocality":"Viamão","addressRegion":"RS","addressCountry":"BR"},"openingHours":"Mo-Fr 08:00-12:00,13:30-18:00"}</script>
 </head>
 <body>
+  <div class="preloader" id="preloader" role="status" aria-label="Carregando Tech Motors" hidden>
+    <div class="preloader-content">
+      <img src="assets/logo.png" width="220" height="88" alt="Tech Motors" />
+      <span class="preloader-label">Preparando o próximo movimento</span>
+      <span class="preloader-track" aria-hidden="true"><span></span></span>
+    </div>
+  </div>
+  <script src="js/preloader.js"></script>
   <header class="header" id="inicio">
     <a class="brand" href="#inicio" aria-label="Tech Motors - início"><img src="assets/logo.png" alt="Tech Motors - Reparação Automotiva" /></a>
-    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i><i></i></button>
-    <nav aria-label="Navegação principal"><a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#sobre">Sobre nós</a><a href="#diferenciais">Diferenciais</a><a href="#localizacao">Localização</a><a href="#contato">Contato</a></nav>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav"><i></i><i></i><i></i></button>
+    <nav id="main-nav" aria-label="Navegação principal"><a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#sobre">Sobre nós</a><a href="#diferenciais">Diferenciais</a><a href="#localizacao">Localização</a><a href="#contato">Contato</a></nav>
     <a class="btn btn-small header-cta" data-whatsapp href="#">Agendar atendimento <span>↗</span></a>
   </header>
 
@@ -68,6 +76,8 @@
 
   <footer><div class="container footer-grid"><div><a class="brand" href="#inicio"><img src="assets/logo.png" alt="Tech Motors - Reparação Automotiva" /></a><p>Reparação automotiva com qualidade, tecnologia e confiança.</p></div><div><h4>Navegação</h4><a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#sobre">Sobre nós</a><a href="#localizacao">Localização</a></div><div><h4>Contato</h4><a href="tel:+5551992102079">(51) 99210-2079</a><a href="mailto:techmotors.service@gmail.com">techmotors.service@gmail.com</a><p>R. Beira Lago, 136 - Santa Isabel<br>Viamão - RS</p></div><div><h4>Siga a Tech Motors</h4><a data-whatsapp href="#">WhatsApp ↗</a><a href="#" aria-label="Instagram da Tech Motors">Instagram ↗</a></div></div><div class="container copyright">© Tech Motors. Todos os direitos reservados.<span>Viamão, RS</span></div></footer>
   <a class="whatsapp-float" data-whatsapp href="#" aria-label="Solicitar orçamento pelo WhatsApp">⌕<span>WhatsApp</span></a>
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
