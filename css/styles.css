@@ -24,3 +24,10 @@ section[id]{scroll-margin-top:88px}.brand{flex-shrink:0}.hero,.wide-cta,.final-c
 @keyframes preloader-progress{to{transform:scaleX(.9)}}
 @keyframes preloader-failsafe{to{visibility:hidden}}
 @media(prefers-reduced-motion:reduce){.preloader{animation:preloader-failsafe 0s 3.2s forwards!important}.preloader-track span{animation:none;transform:scaleX(1)}}
+
+/* Customer reviews */
+.review-card{min-width:0}
+.review-card blockquote{font-size:14px;overflow-wrap:anywhere;flex:1}
+.review-card footer .review-avatar{width:38px;height:38px;flex-shrink:0;display:grid;place-items:center;background:#ff1a1a18;border:1px solid #ff1a1a40;color:#ff5353;font:800 11px Manrope,Arial,sans-serif}
+.review-card footer b{font-size:12px;line-height:1.5}
+@media(max-width:520px){.review-card{padding:24px}}
